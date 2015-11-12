@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <h2 class="site-title">
+                    <a href="~/">Geocache Demo</a>
+                </h2>
+            </div>
+        </div>
+    </header>
+    @RenderSection("scripts", required: false)
+
+    @RenderBody()
+</body>
+</html>

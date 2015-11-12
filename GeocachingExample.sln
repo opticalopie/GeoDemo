@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeocachingExample", "GeocachingExample\GeocachingExample.csproj", "{0F762245-DEF9-437B-A8C0-01CF4A5649F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeocachingExample.Tests", "GeocachingExample.Tests\GeocachingExample.Tests.csproj", "{451EF1C1-79CF-485D-B347-A83EBD716EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F762245-DEF9-437B-A8C0-01CF4A5649F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F762245-DEF9-437B-A8C0-01CF4A5649F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F762245-DEF9-437B-A8C0-01CF4A5649F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F762245-DEF9-437B-A8C0-01CF4A5649F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451EF1C1-79CF-485D-B347-A83EBD716EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451EF1C1-79CF-485D-B347-A83EBD716EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451EF1C1-79CF-485D-B347-A83EBD716EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451EF1C1-79CF-485D-B347-A83EBD716EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

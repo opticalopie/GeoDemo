@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GeocachingModelStoreContainer" CdmEntityContainer="GeocachingEntities1">
+    <EntitySetMapping Name="Geocache">
+      <EntityTypeMapping TypeName="GeocachingModel.Geocache">
+        <MappingFragment StoreEntitySet="Geocache">
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GeocacheID" ColumnName="GeocacheID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

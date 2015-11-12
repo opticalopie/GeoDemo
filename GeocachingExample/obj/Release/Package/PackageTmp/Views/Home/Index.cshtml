@@ -1,0 +1,45 @@
+﻿@inherits System.Web.Mvc.WebViewPage<IEnumerable<GeocachingExample.Models.GeocacheItem>>
+
+@section Scripts {
+    <script type="text/javascript" src="@Url.Content("/Scripts/geocacheControls.js")" ></script>
+}
+
+<div id="body">
+    List of Geocaches:
+    @Html.DropDownList("geocache_items", Model.Select(x => new SelectListItem() { Text = x.Name, Value = x.GeocacheID.ToString() }), "Select a Geocache")
+    
+    <div>
+        <button id="create_geocache">Create New</button>
+        <button id="save_geocache" style="display:none;">Save</button>
+        <!--<button id="delete_geocache" style="display:none;">Delete</button>-->
+    </div>
+
+    <br />
+    <span class="error responseMSG"></span>
+    
+    <div class="geocache_items_wrapper" style="display:none;">
+        <form id="saveContactForm" method="post">
+            <div class="geocache_details">
+                <label>Geocache ID
+                    <input class="geocache_info" type="text" name="GeocacheID" readonly="readonly" />
+                    <span class="error errorGeocacheID"></span>
+                </label>    
+                <label>Name
+                    <input class="editable geocache_info" type="text" name="Name" />
+                    <span class="error errorName"></span>
+                </label>
+                <label>Latitude
+                    <input class="editable geocache_info" type="text" name="Latitude" />
+                    <span class="error errorLatitude"></span>
+                </label>
+                <label>Longitude
+                    <input class="editable geocache_info" type="text" name="Longitude" />
+                    <span class="error errorLongitude"></span>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    
+</div>
+    

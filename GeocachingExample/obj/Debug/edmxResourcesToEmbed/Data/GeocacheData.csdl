@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GeocachingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GeocachingEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Geocache" EntityType="GeocachingModel.Geocache" />
+  </EntityContainer>
+  <EntityType Name="Geocache">
+    <Key>
+      <PropertyRef Name="GeocacheID" />
+    </Key>
+    <Property Type="Int32" Name="GeocacheID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Latitude" Nullable="false" Precision="18" Scale="9" />
+    <Property Type="Decimal" Name="Longitude" Nullable="false" Precision="18" Scale="9" />
+  </EntityType>
+</Schema>
